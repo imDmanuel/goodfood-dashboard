@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-height: 64px;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+@layer components {
+  .btn {
+    @apply text-xs text-[#5A6ACF] font-medium py-2 px-4 bg-[#FBFCFE] border border-[#DDE4F0] rounded-md;
+  }
+}
