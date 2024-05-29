@@ -2,7 +2,7 @@ import OrderTimePieChart from "./order-time-pie-chart";
 
 export default function OrderTimeSection() {
   return (
-    <div className="w-full sm:w-1/2 lg:w-1/3 md:pl-10 max-lg:pr-10 lg:border-l border-[#C8CBD9] max-lg:py-10 border-b">
+    <div className="w-full sm:w-1/2 lg:w-1/3 lg:pl-10 md:pr-10 lg:border-l border-[#C8CBD9] max-lg:py-10 border-b">
       {/* INFO PANEL */}
       <div className="flex">
         {/* LEFT */}

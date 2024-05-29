@@ -11,14 +11,14 @@ export default function Navbar({
 }) {
   const openSidebar = () => setSidebarOpen(true);
   return (
-    <nav className="h-[--navbar-height] border-b border-[#C8CBD9] w-full flex items-center px-10">
+    <nav className="h-[--navbar-height] border-b border-[#C8CBD9] w-full flex items-center px-4 sm:px-8">
       {/* MOBILE MENU ICON */}
       <button
         onClick={openSidebar}
         type="button"
         className="lg:hidden mr-4 border-0 border-[#C8CBD9] rounded-md aspect-square relative"
       >
-        <img src={menuIcon} className="w-12" />
+        <img src={menuIcon} className="w-10" />
       </button>
       {/* END MOBILE MENU ICON */}
       {/* SEARCH */}
@@ -32,7 +32,7 @@ export default function Navbar({
       </div>
       {/* END SEARCH */}
 
-      <div className="max-sm:hidden ml-auto">
+      <div className="flex items-center max-sm:hidden ml-auto space-x-8">
         {/* ACCOUNT INFO */}
         <div className="flex items-center">
           <div className="bg-[#FFE6CC] size-8 flex items-center justify-center rounded-full">
@@ -46,7 +46,9 @@ export default function Navbar({
         {/* END ACCOUNT INFO */}
 
         {/* NOTIFICATION ICON */}
-        <img src={notificationIcon} className="w-4" />
+        <span>
+          <img src={notificationIcon} className="w-4 shrink-0" />
+        </span>
         {/* END NOTIFICATION ICON */}
       </div>
     </nav>
