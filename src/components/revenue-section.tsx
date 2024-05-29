@@ -2,7 +2,7 @@ import RevenueBarChart from "@/components/revenue-bar-chart";
 import upArrowIcon from "@/assets/uparrow-icon.png";
 export default function RevenueSection() {
   return (
-    <div className="w-full lg:w-2/3 border-b border-b-[#C8CBD9] border-0 pr-10">
+    <div className="w-full lg:w-2/3 border-b border-b-[#C8CBD9] border-0 lg:pr-10">
       {/* INFO PANEL */}
       <div className="flex">
         {/* DESCRIPTION TEXT */}
