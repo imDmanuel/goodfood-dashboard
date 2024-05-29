@@ -16,7 +16,7 @@ export default function Navbar({
       <button
         onClick={openSidebar}
         type="button"
-        className="lg:hidden mr-4 border-0 border-[#C8CBD9] p-0.5 rounded-md aspect-square relative"
+        className="lg:hidden mr-4 border-0 border-[#C8CBD9] rounded-md aspect-square relative"
       >
         <img src={menuIcon} className="w-12" />
       </button>
