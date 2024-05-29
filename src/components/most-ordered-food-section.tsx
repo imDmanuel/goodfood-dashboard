@@ -28,7 +28,7 @@ const data = [
 
 export default function MostOrderedFoodSection() {
   return (
-    <div className="px-10 pt-10 w-1/3">
+    <div className="w-full lg:w-1/3 md:px-10 pt-10 max-lg:pb-10 max-lg:border-b">
       <div className="text-sm">Most Ordered Food</div>
       <div className="text-xs opacity-50 mt-2">
         Adipiscing elit, sed do eiusmod tempor

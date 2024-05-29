@@ -5,23 +5,25 @@ import OrderTimeSection from "@/components/order-time-section";
 import YourRatingSection from "@/components/your-rating-section";
 import MostOrderedFoodSection from "@/components/most-ordered-food-section";
 import OrderChartSection from "@/components/order-chart-section";
+import { useState } from "react";
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <section className="min-h-[100dvh] flex items-stretch">
       {/* SIDEBAR */}
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       {/* END SIDEBAR */}
 
       {/* MAIN CONTENT */}
       <main className="flex-1 h-full">
-        <Navbar />
+        <Navbar setSidebarOpen={setSidebarOpen} />
 
         <div className="container">
           <h2 className="font-medium text-lg my-10">Dashboard</h2>
 
           {/* TOP CHART ROW */}
-          <div className="flex border-b border-[#C8CBD9]">
+          <div className="flex flex-wrap lg:flex-row border-[#C8CBD9]">
             {/* REVENUE SECTION */}
             <RevenueSection />
             {/* END REVENUE SECTION */}
@@ -29,11 +31,9 @@ function App() {
             {/* ORDER TIME SECTION */}
             <OrderTimeSection />
             {/* END ORDER TIME SECTION */}
-          </div>
-          {/* END TOP CHART ROW */}
+            {/* END TOP CHART ROW */}
 
-          {/* BOTTOM CHART ROW */}
-          <div className="flex">
+            {/* BOTTOM CHART ROW */}
             {/* YOUR RATING SECTION */}
             <YourRatingSection />
             {/* END YOUR RATING SECTION */}

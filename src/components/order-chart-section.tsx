@@ -3,7 +3,7 @@ import OrderLineChart from "./order-line-chart";
 
 export default function OrderChartSection() {
   return (
-    <div className="w-1/3 pl-10 pt-10 border-l border-[#C8CBD9]">
+    <div className="w-full lg:w-1/3 md:pl-10 pt-10 lg:border-l max-lg:pb-10 border-[#C8CBD9]">
       {/* INFO PANEL */}
       <div className="flex">
         {/* LEFT */}

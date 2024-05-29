@@ -13,3 +13,12 @@
     @apply text-xs text-[#5A6ACF] font-medium py-2 px-4 bg-[#FBFCFE] border border-[#DDE4F0] rounded-md;
   }
 }
+
+@layer utilities {
+  .sidebar-open {
+    @apply max-lg:-translate-x-full transition-transform;
+  }
+  .sidebar-open[data-sidebarOpen="true"] {
+    @apply max-lg:fixed max-lg:left-0 max-lg:block max-lg:min-h-dvh max-lg:z-10 max-lg:-translate-x-0;
+  }
+}
