@@ -8,7 +8,7 @@ export default function YourRatingSection() {
         Lorem ipsum dolor sit amet, consectetur
       </div>
 
-      <div className="h-64">
+      <div className="h-44">
         <YourRatingPieChart />
       </div>
     </div>

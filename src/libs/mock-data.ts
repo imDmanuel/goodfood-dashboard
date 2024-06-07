@@ -68,9 +68,9 @@ export const orderTimeChartData = [
 ];
 
 export const yourRatingChartData = [
-  { name: "Hygiene", value: 85 },
-  { name: "Packaging", value: 92 },
-  { name: "Food Taste", value: 85 },
+  { name: "Hygiene", value: 85, colour: "#C7CEFF" },
+  { name: "Packaging", value: 92, colour: "#5A6ACF" },
+  { name: "Food Taste", value: 85, colour: "#8593ED" },
 ];
 
 export const orderChartData = [
